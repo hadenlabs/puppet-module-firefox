@@ -7,10 +7,10 @@ class firefox::params {
 
   case $::osfamily {
     'Debian': {
-      $package_name = ""
+      $package_name = "firefox"
     }
     'RedHat', 'Amazon': {
-      $package_name = ''
+      $package_name = "firefox"
     }
     default: {
       fail("${::operatingsystem} not supported")
